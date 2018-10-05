@@ -30,7 +30,5 @@ public class MockUserRepository implements UserRepository {
     @Override
     public User getByEmail(String email){return null;}
 
-    @Override
-    List<User> getAll(){return null;}
 
 }
