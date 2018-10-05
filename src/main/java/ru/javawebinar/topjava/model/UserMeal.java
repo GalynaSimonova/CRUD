@@ -2,7 +2,7 @@ package ru.javawebinar.topjava.model;
 
 import java.time.LocalDateTime;
 
-public class UserMeal {
+public class UserMeal extends BaseEntity {
     private final LocalDateTime dateTime;
 
     private final String description;

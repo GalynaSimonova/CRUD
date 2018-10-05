@@ -1,0 +1,7 @@
+1. Add in catalina.bat
+set CATALINA_OPTS=-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=1099 -Dcom.sun.management
+
+2. Для удаленного управления по JMX (если не будет соединения) добавьте в запуск ($TOMCAT_HOME/bin/setenv
+-Djava.rmi.server.hostname=TomacatServer_IP (ip как он пингуется с клиента)
+
+3. Запустить Tomcat как admin
