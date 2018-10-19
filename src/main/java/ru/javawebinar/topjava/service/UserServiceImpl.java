@@ -1,11 +1,20 @@
 package ru.javawebinar.topjava.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import ru.javawebinar.topjava.model.User;
+import ru.javawebinar.topjava.repository.UserRepository;
 import ru.javawebinar.topjava.util.exception.NotFoundException;
 
 import java.util.List;
 
+@Service
 public class UserServiceImpl implements UserService {
+
+    @Autowired
+    private UserRepository repository;
+
+
     @Override
     public User save(User user) {
         return null;
